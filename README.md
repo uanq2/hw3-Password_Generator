@@ -1,4 +1,4 @@
-# hw3-Password_Genereator
+# hw3-Password_Generator
 
 I created a web based application that randomly generates a password that meets certain criteria and provides greater security.
 
