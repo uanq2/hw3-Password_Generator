@@ -42,13 +42,13 @@ function promptUser() {
 
 // function to randomly select characters from each array
 function allChar(array) {
-	const index = Math.floor(Math.random() * array.length);
-	const indexEl = array[index];
+	let index = Math.floor(Math.random() * array.length);
+	let indexEl = array[index];
 	return indexEl;
 }
 // function to generate the password based on the user's choices
 function generatePassword() {
-	const userOptions = promptUser();
+	let userOptions = promptUser();
 	let password = [];
 	let userChoices = [];
 
