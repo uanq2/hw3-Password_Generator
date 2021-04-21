@@ -11,8 +11,8 @@ let allChars = specialCharacters.concat(numericCharacters, upperCasedCharacters,
 
 //function to prompt user for selection
 function promptUser() {
-  let passwordLength = window.prompt('How many characters do you want the password to be? (8 - 128)');
-  if (passwordLength < 8) {
+	let passwordLength = window.prompt('How many characters do you want the password to be? (8 - 128)');
+	if (passwordLength < 8) {
 		alert('Please choose between 8 - 128 characters.');
 		return;
 	}
@@ -20,20 +20,20 @@ function promptUser() {
 		alert('Please choose between 8 - 128 characters.');
 		return;
 	}
-  let specialChar = window.confirm('Do you want special characters?');
-  let numericChar = window.confirm('Do you want numeric characters?');
+	let specialChar = window.confirm('Do you want special characters?');
+	let numericChar = window.confirm('Do you want numeric characters?');
 	let lowerCase = window.confirm('Do you want lower cased characters?');
 	let upperCase = window.confirm('Do you want upper cased characters?');
-	
+
 	if (specialChar != true && numericChar != true && lowerCase != true && upperCase != true) {
 		alert('Please choose at least one character');
 		return;
 	}
 
 	let options = {
-    length: passwordLength,
-    specialChar: specialChar,
-    number: numericChar,
+		length: passwordLength,
+		specialChar: specialChar,
+		number: numericChar,
 		lowerChar: lowerCase,
 		upperChar: upperCase
 	};
@@ -49,11 +49,10 @@ function allChar(array) {
 // function to generate the password based on the user's choices
 function generatePassword() {
 	const userOptions = promptUser();
-	console.log(userOptions);
 	let password = [];
-  let userChoices = [];
-  
-  if (userOptions.specialChar === true) {
+	let userChoices = [];
+
+	if (userOptions.specialChar === true) {
 		userChoices.push(...specialCharacters);
 	}
 
@@ -69,11 +68,10 @@ function generatePassword() {
 		userChoices.push(...upperCasedCharacters);
 	}
 
-// function to randomly choose characters depending on the user's password length
+	// function to randomly choose characters depending on the user's password length
 	for (let i = 0; i < userOptions.length; i++) {
 		password.push(allChar(userChoices));
 	}
-	console.log({ password, userChoices });
 	return password.join('');
 }
 

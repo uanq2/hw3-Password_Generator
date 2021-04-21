@@ -1,4 +1,4 @@
-# hw3-Password_Genereator
+# hw3-Password_Generator
 
 I created a web based application that randomly generates a password that meets certain criteria and provides greater security.
 
@@ -10,9 +10,9 @@ If none of the character types prompts was selected.
 
 If all the criteria is presented, the application generates a password which is displayed in the window's page.
 
-This is the live application on the web
+This is the live view of the password generator deployed via GitHub:
 https://uanq2.github.io/hw3-Password_Genereator/
 
-This is the repo where all the files and code are
+This is the repo where all the files are
 https://github.com/uanq2/hw3-Password_Genereator.git
 
