@@ -14,5 +14,5 @@ This is the live view of the password generator deployed via GitHub:
 https://uanq2.github.io/password_generator/
 
 This is the repo where all the files are
-https://github.com/uanq2/hw3-Password_Genereator.git
+https://github.com/uanq2/password_generator.git
 
