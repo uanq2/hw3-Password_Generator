@@ -11,7 +11,7 @@ If none of the character types prompts was selected.
 If all the criteria is presented, the application generates a password which is displayed in the window's page.
 
 This is the live view of the password generator deployed via GitHub:
-https://uanq2.github.io/hw3-Password_Genereator/
+https://uanq2.github.io/password_generator/
 
 This is the repo where all the files are
 https://github.com/uanq2/hw3-Password_Genereator.git
